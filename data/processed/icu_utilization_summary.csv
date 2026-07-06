@@ -1,0 +1,7 @@
+admission_type,icu_stays,distinct_admissions,median_icu_los_days,average_icu_los_days,hospital_death_admissions,icu_mortality_rate_pct
+EW EMER.,67,62,2.08,3.62,9,14.52
+URGENT,31,25,2.36,3.63,7,28.0
+OBSERVATION ADMIT,17,17,3.35,5.24,3,17.65
+SURGICAL SAME DAY ADMISSION,15,15,1.87,2.33,0,0.0
+ELECTIVE,5,5,1.19,1.8,0,0.0
+DIRECT EMER.,5,4,1.79,5.45,1,25.0

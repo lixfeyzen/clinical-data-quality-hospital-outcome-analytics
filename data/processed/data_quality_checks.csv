@@ -1,0 +1,15 @@
+check_name,table_name,status,issue_count,details
+duplicate_subject_id,patients,PASS,0,Duplicate patient IDs.
+duplicate_hadm_id,admissions,PASS,0,Duplicate admission IDs.
+missing_required_ids,admissions,PASS,0,Missing subject_id or hadm_id.
+missing_admission_dates,admissions,PASS,0,Missing admission or discharge timestamps.
+invalid_admission_dates,admissions,PASS,0,Unparseable admission or discharge timestamps.
+impossible_negative_los,admissions,PASS,0,Discharge timestamp before admission timestamp.
+orphan_admission_subject_id,admissions,PASS,0,Admissions with subject_id not found in patients.
+orphan_diagnosis_hadm_id,diagnoses_icd,PASS,0,Diagnosis rows with hadm_id not found in admissions.
+orphan_lab_hadm_id,labevents,PASS,0,Lab rows with non-null hadm_id not found in admissions.
+orphan_lab_itemid,labevents,PASS,0,Lab rows with itemid not found in d_labitems.
+orphan_transfer_hadm_id,transfers,PASS,0,Transfer rows with hadm_id not found in admissions.
+orphan_icu_hadm_id,icustays,PASS,0,ICU stays with hadm_id not found in admissions.
+missing_lab_numeric_value,labevents,WARN,12481,Lab events without numeric valuenum. Some lab events are textual by design.
+long_los_threshold_check,admissions_summary,WARN,92,"Admissions with LOS >= 7 days; monitor as utilization/outcome segment, not as data error."

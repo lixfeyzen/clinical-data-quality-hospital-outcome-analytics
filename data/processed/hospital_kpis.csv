@@ -1,0 +1,12 @@
+metric,value,definition
+patients,100.0,Distinct demo patients.
+admissions,275.0,Hospital admissions.
+icu_stays,140.0,ICU stay rows.
+diagnosis_rows,4506.0,Diagnosis ICD rows.
+lab_events,107727.0,Lab event rows.
+hospital_death_admissions,15.0,Admissions with hospital_expire_flag = 1.
+mortality_rate_pct,5.45,Hospital death admissions divided by admissions.
+median_los_days,4.85,Median hospital length of stay in days.
+long_los_admissions,92.0,Admissions with LOS >= 7 days.
+long_los_rate_pct,33.45,LOS >= 7 days divided by admissions.
+icu_admissions,128.0,Admissions linked to one or more ICU stays.
