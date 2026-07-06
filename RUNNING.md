@@ -54,30 +54,7 @@ Optional custom paths:
 python scripts/build_outputs.py --raw-dir "path\to\raw" --output-dir "data\processed"
 ```
 
-## 4. Run the Automated Local Workflow
-
-This project includes two PowerShell scripts to reduce manual mistakes before publishing.
-
-Run the pipeline and verify public aggregate outputs:
-
-```powershell
-.\scripts\run_portfolio_pipeline.ps1
-```
-
-Run the GitHub safety check before commit or push:
-
-```powershell
-.\scripts\pre_publish_check.ps1
-```
-
-The safety check verifies:
-
-- no local machine paths are present in public files
-- raw data and generated row-level outputs are ignored
-- `.csv.gz`, local database files, virtual environments, and cache folders are ignored
-- `git add --dry-run .` would not stage raw or row-level generated data
-
-## 5. Inspect Outputs
+## 4. Inspect Outputs
 
 Generated files:
 
